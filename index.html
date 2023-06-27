@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TIMER -->
+
+    <div class="watch-container">
+        <div class="timer-heading">Timer & StopWatch</div>
+
+        <div id="inputContainer" class="input-items">
+            <div class="input-group">
+                <label class="input-label">Hour:</label>
+                <input id="inputHour" placeholder="00" class="input-box" type="number">
+            </div>
+            <div class="input-group">
+                <label class="input-label">Minute:</label>
+                <input id="inputMinute" placeholder="00" min="0" max="59" class="input-box" type="number">
+            </div>
+            <div class="input-group">
+                <label class="input-label">Second:</label>
+                <input id="inputSecond" placeholder="00" min="0" max="59" class="input-box" type="number">
+            </div>
+        </div>
+
+        <p id="outputContainer"><span class="min-width" id="outputHour">00</span> : <span class="min-width" id="outputMinute">00</span> : <span class="min-width" id="outputSecond">00</span></p>
+        
+        <div class="stopwatch-buttons">
+            <button onclick="StartClock()" class="clock-button" id="startBtn">Start</button>
+            <button onclick="StopClock()" class="clock-button" id="stopBtn">Stop</button>
+            <button onclick="ResetClock()" class="clock-button" id="reset">Reset</button>
+        </div>
+    </div>
+
+
+
+    <!-- STOPWATCH -->
+    <div class="st-heading">StopWatch</div>
+
+    <div class="st-container">
+        <div class="timer-display">
+            00 : 00 : 00 : 000
+        </div>
+        <div class="buttons">
+            <button id="start-timer">Start</button>
+            <button id="pause-timer">Pause</button>
+            <button id="reset-timer">Reset</button>
+        </div>
+    </div>
+    <!-- js file for stopwatch -->
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

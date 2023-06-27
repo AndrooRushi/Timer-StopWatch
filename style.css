@@ -1,0 +1,178 @@
+
+body {
+    background: #8c52ff;
+}
+
+.timer-heading {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.watch-container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch-container p {
+    padding: 5px;
+    letter-spacing: 1px;
+    font-size: 72px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.watch-container p span {
+    border: 2px solid black;
+}
+
+.clock-button {
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    min-width: 170px;
+    font-size: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#startBtn {
+    background-color: green;
+}
+
+#stopBtn {
+    background-color: red;
+    display: none;
+}
+
+#reset {
+    background-color: darkgrey;
+}
+
+.min-width {
+    display: inline-block;
+    /* min-width: 100px; */
+    text-align: center;
+    font-size: 70px;
+    padding: 10px;
+}
+
+.stopwatch-buttons {
+    margin-top: 20px;
+}
+
+.input-items {
+    display: flex;
+    margin: 10px;
+    border: 4px solid black;
+    background-color: white;
+}
+
+.input-box {
+    width: 108px;
+    height: 65px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    margin: 5px;
+    font-size: 30px;
+}
+
+#outputContainer {
+    display: none;
+    margin: 5px;
+    background-color: white;
+}
+
+
+
+/* STOPWATCH */
+
+
+
+.st-heading {
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+}
+
+.st-container {
+    margin-top: 160px;
+    background-color: #fff;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
+}
+
+.timer-display {
+    position: relative;
+    width: 75%;
+    background: #fff;
+    left: 4%;
+    font-family: 'Roboto mono', monospace;
+    color: #8c52ff;
+    font-size: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    border: 4px solid #ff0036;
+}
+
+.buttons {
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: #8c52ff;
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: #e35209;
+}
+
+.buttons button:nth-last-child(1) {
+    background-color: #f7df1e;
+}
+
+.buttons button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
